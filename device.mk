@@ -367,4 +367,5 @@ PRODUCT_COPY_FILES += \
 $(call inherit-product, device/oppo/common/common.mk)
 
 # AOSP Dialer
+PRODUCT_PACKAGES += \
      Dialer
