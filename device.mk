@@ -366,6 +366,10 @@ PRODUCT_COPY_FILES += \
 # Inherit from oppo-common
 $(call inherit-product, device/oppo/common/common.mk)
 
-# AOSP Dialer
+# Google Dialer
 PRODUCT_PACKAGES += \
      Dialer
+
+PRODUCT_COPY_FILES += \
+     $(LOCAL_PATH)/prebuilt/Dialer/framework/com.google.android.dialer.support.jar:system/framework/com.google.android.dialer.support.jar \
+     $(LOCAL_PATH)/prebuilt/Dialer/permissions/com.google.android.dialer.support.xml:system/etc/permissions/com.google.android.dialer.support.xml
