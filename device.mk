@@ -372,10 +372,3 @@ PRODUCT_PACKAGES += \
 PRODUCT_COPY_FILES += \
      $(LOCAL_PATH)/prebuilt/Dialer/framework/com.google.android.dialer.support.jar:system/framework/com.google.android.dialer.support.jar \
      $(LOCAL_PATH)/prebuilt/Dialer/permissions/com.google.android.dialer.support.xml:system/etc/permissions/com.google.android.dialer.support.xml
-
-# V4A
-PRODUCT_PACKAGES += \
-     V4A
-
-PRODUCT_COPY_FILES += \
-     $(LOCAL_PATH)/prebuilt/V4A_libs/libv4a_fx_jb.so:system/lib/soundfx/libv4a_fx_jb.so
