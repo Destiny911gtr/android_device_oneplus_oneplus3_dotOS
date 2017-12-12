@@ -1,15 +1,14 @@
 LOCAL_PATH := $(call my-dir)
 
-# Prebuilt Apps
-
+# OnePlus Camera
 include $(CLEAR_VARS)
-LOCAL_MODULE := GooglePhone
+LOCAL_MODULE := OnePlusCamera
+LOCAL_MODULE_OWNER := oneplus
+LOCAL_SRC_FILES := apks/$(LOCAL_MODULE).apk
 LOCAL_MODULE_TAGS := optional
-LOCAL_SRC_FILES := apk/GooglePhone/GooglePhone
-LOCAL_CERTIFICATE := PRESIGNED
 LOCAL_MODULE_CLASS := APPS
-LOCAL_MODULE_SUFFIX := $(COMMON_ANDROID_PACKAGE_SUFFIX)
-LOCAL_MODULE_PATH := $(TARGET_OUT)/priv-app
+LOCAL_CERTIFICATE := PRESIGNED
+LOCAL_OVERRIDES_PACKAGES := Camera2
 include $(BUILD_PREBUILT)
 
 # Device init scripts

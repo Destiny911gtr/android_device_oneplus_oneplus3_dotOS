@@ -159,8 +159,8 @@ PRODUCT_COPY_FILES += \
 
 # Camera
 PRODUCT_PACKAGES += \
-    Snap \
-    libcamera_shim
+    libcamera_shim \
+    OnePlusCamera
 
 # Connectivity Engine support (CNE)
 PRODUCT_PACKAGES += \
@@ -285,6 +285,10 @@ PRODUCT_COPY_FILES += \
 PRODUCT_PACKAGES += \
     libjson
 
+# QPerformance
+PRODUCT_PACKAGES += \
+	PRODUCT_BOOT_JARS += QPerformance
+
 # Ramdisk
 PRODUCT_PACKAGES += \
     fstab.qcom \
@@ -353,4 +357,8 @@ $(call inherit-product, device/oppo/common/common.mk)
 
 # Google Dialer
 PRODUCT_PACKAGES += \
-    GooglePhone
+     Dialer
+
+PRODUCT_COPY_FILES += \
+     $(LOCAL_PATH)/prebuilt/Dialer/framework/com.google.android.dialer.support.jar:system/framework/com.google.android.dialer.support.jar \
+     $(LOCAL_PATH)/prebuilt/Dialer/permissions/com.google.android.dialer.support.xml:system/etc/permissions/com.google.android.dialer.support.xml
