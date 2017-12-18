@@ -1,3 +1,4 @@
+
 # Copyright (C) 2016 The CyanogenMod Project
 # Copyright (C) 2017 The LineageOS Project
 #
@@ -36,3 +37,4 @@ TARGET_VENDOR := oneplus
 
 WITH_MAGISK := true
 DOT_OFFICIAL := true
+PA_CAM := false
